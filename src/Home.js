@@ -3,9 +3,12 @@ import { connect } from "react-redux";
 import ClassCard from "./ClassCard";
 
 const Home = props => {
-  const classromlist = props.classrooms.map(classroom => (
-    <ClassCard classroom={classroom} key={classroom["name"]} />
-  ));
+  const classromlist = props.classrooms.map(
+    classroom =>
+      classroom["active"] === true && (
+        <ClassCard classroom={classroom} key={classroom["name"]} />
+      )
+  );
   return (
     <div className="container">
       <h1 className="text-center mt-2" style={{ color: "white" }}>

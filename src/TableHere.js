@@ -18,7 +18,7 @@ const TableNotchecked = props => {
         <thead>
           <tr>
             <th scope="col">Name</th>
-            <th scope="col"></th>
+            <th scope="col">#Students({props.here.length})</th>
           </tr>
         </thead>
         <tbody>{studentlist}</tbody>
