@@ -12,11 +12,11 @@ const ClassRoom = props => {
       </h2>
       <NoteField />
       <div className="row">
-        <div className="col-2"></div>
-        <div className="col-4">
+        <div className="col-md-2"></div>
+        <div className="col-md-4 mb-3">
           <TableNotchecked />
         </div>
-        <div className="col-4">
+        <div className="col-md-4">
           <TableHere />
         </div>
       </div>

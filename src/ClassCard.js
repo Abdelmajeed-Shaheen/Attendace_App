@@ -4,8 +4,8 @@ import { classselected } from "./redux/actions";
 
 const ClassCard = props => {
   return (
-    <div className="col-4">
-      <div className="card h-100" style={{ width: "18rem" }}>
+    <div className="col-md-4 mb-2 text-center">
+      <div className="card h-100">
         <div className="card-header">{props.classroom["name"]}</div>
         <div className="card-body">
           <button
