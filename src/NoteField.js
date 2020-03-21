@@ -3,8 +3,8 @@ import React from "react";
 const NoteField = () => {
   return (
     <div className="row ">
-      <div className="col-3"></div>
-      <div className="col-6">
+      <div className="col-md-3"></div>
+      <div className="col-md-6">
         <div className="text-center">
           <div className="input-group mb-3">
             <div className="input-group-prepend">
