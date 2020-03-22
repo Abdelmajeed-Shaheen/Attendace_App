@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { classselected } from "./redux/actions";
+import { classselected } from "../redux/actions";
 
 const ClassCard = props => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.png";
 import { connect } from "react-redux";
-import { reload } from "./redux/actions";
+import { reload } from "../redux/actions";
 
 const Header = props => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
-import TableNotchecked from "./TableNotchecked";
-import TableHere from "./TableHere";
-import NoteField from "./NoteField";
 import { connect } from "react-redux";
+import TableNotchecked from "../notHereTable/TableNotchecked";
+import TableHere from "../hereTable/TableHere";
+import NoteField from "./NoteField";
 
 const ClassRoom = props => {
   return (

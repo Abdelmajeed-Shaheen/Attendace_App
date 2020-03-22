@@ -1,8 +1,8 @@
 import React from "react";
-import ClassRoom from "./ClassRoom";
-import Home from "./Home";
+import Home from "./homepage/Home";
 import { connect } from "react-redux";
-import Header from "./Header";
+import Header from "./header/Header";
+import ClassRoom from "./tablesPage/ClassRoom";
 
 const App = porps => {
   return (

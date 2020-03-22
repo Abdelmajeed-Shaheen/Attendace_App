@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-import { nothere } from "./redux/actions";
+import { ishere } from "../redux/actions";
 
-const TableHereRow = props => {
+const TableNotcheckedRow = props => {
   return (
     <tr>
       <td>{props.student}</td>
@@ -10,20 +10,21 @@ const TableHereRow = props => {
         <div className="btn-group" role="group" aria-label="Basic example">
           <button
             type="button"
-            className="btn btn-danger"
-            onClick={() => props.nothere(props.student)}
+            className={"btn btn-success"}
+            onClick={() => props.ishere(props.student)}
           >
-            <i className="fa fa-close"></i>{" "}
+            <i className="fa fa-check"></i>
           </button>
         </div>
       </td>
     </tr>
   );
 };
+
 const mapDispatchToProps = dispatch => {
   return {
-    nothere: student => dispatch(nothere(student))
+    ishere: student => dispatch(ishere(student))
   };
 };
 
-export default connect(null, mapDispatchToProps)(TableHereRow);
+export default connect(null, mapDispatchToProps)(TableNotcheckedRow);
